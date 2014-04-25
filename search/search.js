@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   1: "ns",
   2: "ns",
   3: "ns",
-  4: "ns",
+  4: "n",
   5: "s",
   6: "b"
 };

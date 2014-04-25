@@ -87,9 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">smb_session.h File Reference</div>  </div>
@@ -100,47 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;bdsm/netbios_session.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="smb__defs_8h.html">bdsm/smb_defs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="smb__types_8h.html">bdsm/smb_types.h</a>&quot;</code><br/>
 <code>#include &quot;bdsm/smb_message.h&quot;</code><br/>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmb__file__s.html">smb_file_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque data structure to represent file.  <a href="structsmb__file__s.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmb__session__t.html">smb_session_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque data structure to represent a SMB Session.  <a href="structsmb__session__t.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a036e4d6271ae21c2d7e1d33b33f50c66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a036e4d6271ae21c2d7e1d33b33f50c66"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a036e4d6271ae21c2d7e1d33b33f50c66">SMB_STATE_SESSION_OK</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memdesc:a036e4d6271ae21c2d7e1d33b33f50c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session Authentication was successfull, you can become nasty. <br/></td></tr>
-<tr class="separator:a036e4d6271ae21c2d7e1d33b33f50c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91cf8a6d294c4d59258d17d47caf072d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91cf8a6d294c4d59258d17d47caf072d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a91cf8a6d294c4d59258d17d47caf072d">SMB_STATE_DIALECT_OK</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a91cf8a6d294c4d59258d17d47caf072d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialect was successfully negotiated. <br/></td></tr>
-<tr class="separator:a91cf8a6d294c4d59258d17d47caf072d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3409e94036ea5d0f915dbe8a57487d97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3409e94036ea5d0f915dbe8a57487d97"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a3409e94036ea5d0f915dbe8a57487d97">SMB_STATE_NETBIOS_OK</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:a3409e94036ea5d0f915dbe8a57487d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Netbios session has been successfully established. <br/></td></tr>
-<tr class="separator:a3409e94036ea5d0f915dbe8a57487d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f543a878430315e314c357b9d58852"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26f543a878430315e314c357b9d58852"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a26f543a878430315e314c357b9d58852">SMB_STATE_NEW</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a26f543a878430315e314c357b9d58852"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SMB session has just been created. <br/></td></tr>
-<tr class="separator:a26f543a878430315e314c357b9d58852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb3cf125f0402bc1f2bf54b3995c1050"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb3cf125f0402bc1f2bf54b3995c1050"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#abb3cf125f0402bc1f2bf54b3995c1050">SMB_STATE_ERROR</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="memdesc:abb3cf125f0402bc1f2bf54b3995c1050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error state, there was an error somewhere. <br/></td></tr>
-<tr class="separator:abb3cf125f0402bc1f2bf54b3995c1050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:aed3a7901f12b768d367d3c253a916d49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed3a7901f12b768d367d3c253a916d49"></a>
-typedef struct <a class="el" href="structsmb__file__s.html">smb_file_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#aed3a7901f12b768d367d3c253a916d49">smb_file_t</a></td></tr>
-<tr class="memdesc:aed3a7901f12b768d367d3c253a916d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">An opaque data structure to represent file. <br/></td></tr>
-<tr class="separator:aed3a7901f12b768d367d3c253a916d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0bfe41e899e0cce788112d6b8d21f622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a0bfe41e899e0cce788112d6b8d21f622">smb_session_new</a> ()</td></tr>
@@ -373,18 +332,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current state of the session. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="smb__session_8h.html#abb3cf125f0402bc1f2bf54b3995c1050" title="Error state, there was an error somewhere. ">SMB_STATE_ERROR</a> </dd>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="smb__defs_8h.html#abb3cf125f0402bc1f2bf54b3995c1050" title="Error state, there was an error somewhere. ">SMB_STATE_ERROR</a> </dd>
 <dd>
-<a class="el" href="smb__session_8h.html#a26f543a878430315e314c357b9d58852" title="The SMB session has just been created. ">SMB_STATE_NEW</a> </dd>
+<a class="el" href="smb__defs_8h.html#a26f543a878430315e314c357b9d58852" title="The SMB session has just been created. ">SMB_STATE_NEW</a> </dd>
 <dd>
-<a class="el" href="smb__session_8h.html#a036e4d6271ae21c2d7e1d33b33f50c66" title="Session Authentication was successfull, you can become nasty. ">SMB_STATE_SESSION_OK</a> </dd></dl>
+<a class="el" href="smb__defs_8h.html#a036e4d6271ae21c2d7e1d33b33f50c66" title="Session Authentication was successfull, you can become nasty. ">SMB_STATE_SESSION_OK</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 25 2014 11:26:00 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 16:12:45 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
