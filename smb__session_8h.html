@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Functions to connect and authenticate to an SMB server.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;bdsm/netbios_session.h&quot;</code><br/>
-<code>#include &quot;bdsm/smb_defs.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="smb__defs_8h.html">bdsm/smb_defs.h</a>&quot;</code><br/>
 <code>#include &quot;bdsm/smb_message.h&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -152,69 +152,23 @@ Functions</h2></td></tr>
 <tr class="memitem:abded17c7bef9895052c8141fbc2f3655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#abded17c7bef9895052c8141fbc2f3655">smb_session_state</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
 <tr class="memdesc:abded17c7bef9895052c8141fbc2f3655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the session.  <a href="#abded17c7bef9895052c8141fbc2f3655">More...</a><br/></td></tr>
 <tr class="separator:abded17c7bef9895052c8141fbc2f3655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03aa570667b3b0437d6891b9bca12045"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a03aa570667b3b0437d6891b9bca12045">smb_session_connect</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, char *name, uint32_t ip)</td></tr>
-<tr class="memdesc:a03aa570667b3b0437d6891b9bca12045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a connection and negotiate a session protocol with a remote host.  <a href="#a03aa570667b3b0437d6891b9bca12045">More...</a><br/></td></tr>
-<tr class="separator:a03aa570667b3b0437d6891b9bca12045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fad173e2153d3408edae9744ea24a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a05fad173e2153d3408edae9744ea24a0">smb_authenticate</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, const char *domain, const char *user, const char *password)</td></tr>
-<tr class="memdesc:a05fad173e2153d3408edae9744ea24a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate on the remote host with the provided credentials.  <a href="#a05fad173e2153d3408edae9744ea24a0">More...</a><br/></td></tr>
-<tr class="separator:a05fad173e2153d3408edae9744ea24a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa188972e5a14685572ea7fb9f4e0434"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#afa188972e5a14685572ea7fb9f4e0434">smb_session_connect</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, const char *name, uint32_t ip)</td></tr>
+<tr class="memdesc:afa188972e5a14685572ea7fb9f4e0434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a connection and negotiate a session protocol with a remote host.  <a href="#afa188972e5a14685572ea7fb9f4e0434">More...</a><br/></td></tr>
+<tr class="separator:afa188972e5a14685572ea7fb9f4e0434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8bf61602125fdae02628f16e1fb5c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a1d8bf61602125fdae02628f16e1fb5c5">smb_session_login</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, const char *domain, const char *user, const char *password)</td></tr>
+<tr class="memdesc:a1d8bf61602125fdae02628f16e1fb5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate on the remote host with the provided credentials.  <a href="#a1d8bf61602125fdae02628f16e1fb5c5">More...</a><br/></td></tr>
+<tr class="separator:a1d8bf61602125fdae02628f16e1fb5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9076f311152a1bf999123a1cd6a5652"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#ae9076f311152a1bf999123a1cd6a5652">smb_session_is_guest</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
+<tr class="memdesc:ae9076f311152a1bf999123a1cd6a5652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Am i logged in as Guest ?  <a href="#ae9076f311152a1bf999123a1cd6a5652">More...</a><br/></td></tr>
+<tr class="separator:ae9076f311152a1bf999123a1cd6a5652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#acff8dc7a4c4ef06b84baace09b6c05c4">smb_session_server_name</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
+<tr class="memdesc:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the server name with the &lt;XX&gt; type.  <a href="#acff8dc7a4c4ef06b84baace09b6c05c4">More...</a><br/></td></tr>
+<tr class="separator:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to connect and authenticate to an SMB server. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a05fad173e2153d3408edae9744ea24a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int smb_authenticate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>domain</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>user</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Authenticate on the remote host with the provided credentials. </p>
-<p>Can be called if session state is SMB_STATE_DIALECT_OK. If successfull, session state transition to SMB_STATE_SESSION_OK </p>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>We currently only support LMv2 authentication.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>The session object. </td></tr>
-    <tr><td class="paramname">domain</td><td>The domain of the user. You should use the (netbios) uppercased machine name, then try 'WORKGROUP'. </td></tr>
-    <tr><td class="paramname">user</td><td>The user name in the current locale </td></tr>
-    <tr><td class="paramname">password</td><td>The password in the current locale </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 in case of failure, &gt; 0 in case of success. Sucess doesn't mean you are logged in with the user you requested. If guest are activated on the remote host, when login fails, you are logged in as 'Guest'. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a03aa570667b3b0437d6891b9bca12045"></a>
+<a class="anchor" id="afa188972e5a14685572ea7fb9f4e0434"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -227,7 +181,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -283,6 +237,83 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae9076f311152a1bf999123a1cd6a5652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int smb_session_is_guest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Am i logged in as Guest ? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The session object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 -&gt; Logged in as guest 0 -&gt; Logged in as regular user -1 -&gt; Error (not logged in, invalid session, etc.) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d8bf61602125fdae02628f16e1fb5c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int smb_session_login </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Authenticate on the remote host with the provided credentials. </p>
+<p>Can be called if session state is SMB_STATE_DIALECT_OK. If successfull, session state transition to SMB_STATE_SESSION_OK </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>We currently only support LMv2 authentication.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The session object. </td></tr>
+    <tr><td class="paramname">domain</td><td>The domain of the user. You should use the (netbios) uppercased machine name, then try 'WORKGROUP'. </td></tr>
+    <tr><td class="paramname">user</td><td>The user name in the current locale </td></tr>
+    <tr><td class="paramname">password</td><td>The password in the current locale </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of failure, &gt; 0 in case of success. Success doesn't mean you are logged in with the user you requested. If guest are activated on the remote host, when login fails, you are logged in as 'Guest'. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0bfe41e899e0cce788112d6b8d21f622"></a>
 <div class="memitem">
 <div class="memproto">
@@ -299,6 +330,31 @@ Functions</h2></td></tr>
 <p>Allocates a new Session object. </p>
 <p>To be able to perform actions on shares and file, you'll need to call smb_session_connect, then authenticate with smb_authenticate. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new Session object. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acff8dc7a4c4ef06b84baace09b6c05c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* smb_session_server_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the server name with the &lt;XX&gt; type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The session object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The server name or NULL. The memory is owned by the session object. </dd></dl>
 
 </div>
 </div>
@@ -328,7 +384,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 16 2014 16:56:31 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 11:26:00 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

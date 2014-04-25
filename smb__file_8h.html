@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>libdsm: include/bdsm/smb_utils.h File Reference</title>
+<title>libdsm: include/bdsm/smb_file.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,20 +86,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">smb_utils.h File Reference</div>  </div>
+<div class="title">smb_file.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>SMB helper functions.  
+<p>File operations.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>SMB helper functions. </p>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &quot;<a class="el" href="smb__session_8h.html">bdsm/smb_session.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afaf8b4d2ab024e83bc034c7c2d69bf2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmb__fd.html">smb_fd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__file_8h.html#afaf8b4d2ab024e83bc034c7c2d69bf2d">smb_fopen</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, <a class="el" href="structsmb__tid.html">smb_tid</a> tid, const char *path, uint32_t mod)</td></tr>
+<tr class="memdesc:afaf8b4d2ab024e83bc034c7c2d69bf2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file on a share.  <a href="#afaf8b4d2ab024e83bc034c7c2d69bf2d">More...</a><br/></td></tr>
+<tr class="separator:afaf8b4d2ab024e83bc034c7c2d69bf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File operations. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="afaf8b4d2ab024e83bc034c7c2d69bf2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsmb__fd.html">smb_fd</a> smb_fopen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsmb__tid.html">smb_tid</a>&#160;</td>
+          <td class="paramname"><em>tid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a file on a share. </p>
+<p>Use this function to obtain an <a class="el" href="structsmb__fd.html" title="SMB File descriptor, represents a file within a session. ">smb_fd</a>, necesary for file operations</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The session object </td></tr>
+    <tr><td class="paramname">tid</td><td>The tid of the share the file is in, obtained via <a class="el" href="smb__share_8h.html#af68fd7760e420e9fd06afc952a835cd0" title="Connects to a SMB share. ">smb_tree_connect()</a> </td></tr>
+    <tr><td class="paramname">path</td><td>The path of the file to open </td></tr>
+    <tr><td class="paramname">mod</td><td>The access modes requested (example: SMB_MOD_RO) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A smb file description that can be use for further file operations or 0 in case of error</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="smb__share_8h.html#af68fd7760e420e9fd06afc952a835cd0" title="Connects to a SMB share. ">smb_tree_connect</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 16 2014 16:56:31 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 11:26:00 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
