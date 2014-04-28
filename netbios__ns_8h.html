@@ -108,61 +108,61 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetbios__ns__entry__s.html">netbios_ns_entry_s</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an correspondance between an IP address and a Netbios name.  <a href="structnetbios__ns__entry__s.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The netbios name service object.  <a href="structnetbios__ns__t.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetbios__ns.html">netbios_ns</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The netbios name service object.  <a href="structnetbios__ns.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a6997c1f2f00b5b432db0ac9769c401ea"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structnetbios__ns__entry__s.html">netbios_ns_entry_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a></td></tr>
-<tr class="memdesc:a6997c1f2f00b5b432db0ac9769c401ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an correspondance between an IP address and a Netbios name.  <a href="#a6997c1f2f00b5b432db0ac9769c401ea">More...</a><br/></td></tr>
-<tr class="separator:a6997c1f2f00b5b432db0ac9769c401ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504752eeefd6217c175ad25e4a5f43bf"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structnetbios__ns__entry__s.html">netbios_ns_entry_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a></td></tr>
+<tr class="memdesc:a504752eeefd6217c175ad25e4a5f43bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an correspondance between an IP address and a Netbios name.  <a href="#a504752eeefd6217c175ad25e4a5f43bf">More...</a><br/></td></tr>
+<tr class="separator:a504752eeefd6217c175ad25e4a5f43bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a91c45504747e001178b44a510ef9f2c8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a91c45504747e001178b44a510ef9f2c8">netbios_ns_entry_name</a> (<a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *entry)</td></tr>
-<tr class="memdesc:a91c45504747e001178b44a510ef9f2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the entry referenced by the iterator iter.  <a href="#a91c45504747e001178b44a510ef9f2c8">More...</a><br/></td></tr>
-<tr class="separator:a91c45504747e001178b44a510ef9f2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6ae6a43ae38611fce4c8d7f63ebd22"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a0d6ae6a43ae38611fce4c8d7f63ebd22">netbios_ns_entry_ip</a> (<a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *entry)</td></tr>
-<tr class="memdesc:a0d6ae6a43ae38611fce4c8d7f63ebd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the IP address of the correspondance referenced by the iterator.  <a href="#a0d6ae6a43ae38611fce4c8d7f63ebd22">More...</a><br/></td></tr>
-<tr class="separator:a0d6ae6a43ae38611fce4c8d7f63ebd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3feb16ec277db29b77fcc342bfd9b88"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#ad3feb16ec277db29b77fcc342bfd9b88">netbios_ns_entry_type</a> (<a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *entry)</td></tr>
-<tr class="memdesc:ad3feb16ec277db29b77fcc342bfd9b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of record.  <a href="#ad3feb16ec277db29b77fcc342bfd9b88">More...</a><br/></td></tr>
-<tr class="separator:ad3feb16ec277db29b77fcc342bfd9b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7612fa14b9f7b81b27f414163341478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#af7612fa14b9f7b81b27f414163341478">netbios_ns_new</a> ()</td></tr>
-<tr class="memdesc:af7612fa14b9f7b81b27f414163341478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize the Netbios name service client object.  <a href="#af7612fa14b9f7b81b27f414163341478">More...</a><br/></td></tr>
-<tr class="separator:af7612fa14b9f7b81b27f414163341478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab395ca9c9e99267011351f4b50772e06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#ab395ca9c9e99267011351f4b50772e06">netbios_ns_destroy</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns)</td></tr>
-<tr class="memdesc:ab395ca9c9e99267011351f4b50772e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the netbios name service object.  <a href="#ab395ca9c9e99267011351f4b50772e06">More...</a><br/></td></tr>
-<tr class="separator:ab395ca9c9e99267011351f4b50772e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3c2361ba5fd044549bd811b8f3b70c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a2e3c2361ba5fd044549bd811b8f3b70c">netbios_ns_resolve</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns, const char *name, char type, uint32_t *addr)</td></tr>
-<tr class="memdesc:a2e3c2361ba5fd044549bd811b8f3b70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a Netbios name.  <a href="#a2e3c2361ba5fd044549bd811b8f3b70c">More...</a><br/></td></tr>
-<tr class="separator:a2e3c2361ba5fd044549bd811b8f3b70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeba1dcc010b77dde6f86e8ac5c95e780"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#aeba1dcc010b77dde6f86e8ac5c95e780">netbios_ns_discover</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns)</td></tr>
-<tr class="memdesc:aeba1dcc010b77dde6f86e8ac5c95e780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to discover all the Netbios/SMB speaking machine on the LAN.  <a href="#aeba1dcc010b77dde6f86e8ac5c95e780">More...</a><br/></td></tr>
-<tr class="separator:aeba1dcc010b77dde6f86e8ac5c95e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c57a5c39f8a34aab815af578c875e0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a8c57a5c39f8a34aab815af578c875e0c">netbios_ns_entry_count</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns)</td></tr>
-<tr class="memdesc:a8c57a5c39f8a34aab815af578c875e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of entries (know machine) for this name service object.  <a href="#a8c57a5c39f8a34aab815af578c875e0c">More...</a><br/></td></tr>
-<tr class="separator:a8c57a5c39f8a34aab815af578c875e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d853b181ad7fea32771d3474a5516f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#ab2d853b181ad7fea32771d3474a5516f">netbios_ns_entry_at</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns, int pos)</td></tr>
-<tr class="memdesc:ab2d853b181ad7fea32771d3474a5516f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entry at a certain position in the entry list.  <a href="#ab2d853b181ad7fea32771d3474a5516f">More...</a><br/></td></tr>
-<tr class="separator:ab2d853b181ad7fea32771d3474a5516f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac18c2bbe3daf1192f8e3d235544b3b2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#aac18c2bbe3daf1192f8e3d235544b3b2">netbios_ns_inverse</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns, uint32_t ip)</td></tr>
-<tr class="memdesc:aac18c2bbe3daf1192f8e3d235544b3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an inverse netbios lookup (get name from ip)  <a href="#aac18c2bbe3daf1192f8e3d235544b3b2">More...</a><br/></td></tr>
-<tr class="separator:aac18c2bbe3daf1192f8e3d235544b3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22f26722403327126f8a3e4e5324506f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a22f26722403327126f8a3e4e5324506f">netbios_ns_clear</a> (<a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *ns)</td></tr>
-<tr class="memdesc:a22f26722403327126f8a3e4e5324506f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all the existing entries from the name service.  <a href="#a22f26722403327126f8a3e4e5324506f">More...</a><br/></td></tr>
-<tr class="separator:a22f26722403327126f8a3e4e5324506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdbc5031773b484f04080e0d4ce3b5d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#acfdbc5031773b484f04080e0d4ce3b5d">netbios_ns_entry_name</a> (<a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *entry)</td></tr>
+<tr class="memdesc:acfdbc5031773b484f04080e0d4ce3b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the entry referenced by the iterator iter.  <a href="#acfdbc5031773b484f04080e0d4ce3b5d">More...</a><br/></td></tr>
+<tr class="separator:acfdbc5031773b484f04080e0d4ce3b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2c2346bcc8b0050636a0495abe854a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a5e2c2346bcc8b0050636a0495abe854a">netbios_ns_entry_ip</a> (<a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *entry)</td></tr>
+<tr class="memdesc:a5e2c2346bcc8b0050636a0495abe854a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the IP address of the correspondance referenced by the iterator.  <a href="#a5e2c2346bcc8b0050636a0495abe854a">More...</a><br/></td></tr>
+<tr class="separator:a5e2c2346bcc8b0050636a0495abe854a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee8303fcbfe9bc5dd6df6cbe8a45f56"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a4ee8303fcbfe9bc5dd6df6cbe8a45f56">netbios_ns_entry_type</a> (<a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *entry)</td></tr>
+<tr class="memdesc:a4ee8303fcbfe9bc5dd6df6cbe8a45f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of record.  <a href="#a4ee8303fcbfe9bc5dd6df6cbe8a45f56">More...</a><br/></td></tr>
+<tr class="separator:a4ee8303fcbfe9bc5dd6df6cbe8a45f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26305a9a54336e251a6635cb08b00b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#ad26305a9a54336e251a6635cb08b00b8">netbios_ns_new</a> ()</td></tr>
+<tr class="memdesc:ad26305a9a54336e251a6635cb08b00b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize the Netbios name service client object.  <a href="#ad26305a9a54336e251a6635cb08b00b8">More...</a><br/></td></tr>
+<tr class="separator:ad26305a9a54336e251a6635cb08b00b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cd8d16f8ba4a74dd11fa8ed2052d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a72cd8d16f8ba4a74dd11fa8ed2052d63">netbios_ns_destroy</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns)</td></tr>
+<tr class="memdesc:a72cd8d16f8ba4a74dd11fa8ed2052d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the netbios name service object.  <a href="#a72cd8d16f8ba4a74dd11fa8ed2052d63">More...</a><br/></td></tr>
+<tr class="separator:a72cd8d16f8ba4a74dd11fa8ed2052d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280c5f8bd17fb2de1b58102e9b73115d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a280c5f8bd17fb2de1b58102e9b73115d">netbios_ns_resolve</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns, const char *name, char type, uint32_t *addr)</td></tr>
+<tr class="memdesc:a280c5f8bd17fb2de1b58102e9b73115d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a Netbios name.  <a href="#a280c5f8bd17fb2de1b58102e9b73115d">More...</a><br/></td></tr>
+<tr class="separator:a280c5f8bd17fb2de1b58102e9b73115d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2f58a82af09eb10d1d54278393b916"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#acd2f58a82af09eb10d1d54278393b916">netbios_ns_discover</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns)</td></tr>
+<tr class="memdesc:acd2f58a82af09eb10d1d54278393b916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to discover all the Netbios/SMB speaking machine on the LAN.  <a href="#acd2f58a82af09eb10d1d54278393b916">More...</a><br/></td></tr>
+<tr class="separator:acd2f58a82af09eb10d1d54278393b916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5958f44aa32bd866126ff9a4f6f0fbc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a5958f44aa32bd866126ff9a4f6f0fbc6">netbios_ns_entry_count</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns)</td></tr>
+<tr class="memdesc:a5958f44aa32bd866126ff9a4f6f0fbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of entries (know machine) for this name service object.  <a href="#a5958f44aa32bd866126ff9a4f6f0fbc6">More...</a><br/></td></tr>
+<tr class="separator:a5958f44aa32bd866126ff9a4f6f0fbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf7dc845ff5339b0badf2b867debcf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a7bf7dc845ff5339b0badf2b867debcf1">netbios_ns_entry_at</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns, int pos)</td></tr>
+<tr class="memdesc:a7bf7dc845ff5339b0badf2b867debcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entry at a certain position in the entry list.  <a href="#a7bf7dc845ff5339b0badf2b867debcf1">More...</a><br/></td></tr>
+<tr class="separator:a7bf7dc845ff5339b0badf2b867debcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1aef987b41b337a09607a36205db6fd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#ac1aef987b41b337a09607a36205db6fd">netbios_ns_inverse</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns, uint32_t ip)</td></tr>
+<tr class="memdesc:ac1aef987b41b337a09607a36205db6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an inverse netbios lookup (get name from ip)  <a href="#ac1aef987b41b337a09607a36205db6fd">More...</a><br/></td></tr>
+<tr class="separator:ac1aef987b41b337a09607a36205db6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b491cb176342a50ad072288bb88624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netbios__ns_8h.html#a64b491cb176342a50ad072288bb88624">netbios_ns_clear</a> (<a class="el" href="structnetbios__ns.html">netbios_ns</a> *ns)</td></tr>
+<tr class="memdesc:a64b491cb176342a50ad072288bb88624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all the existing entries from the name service.  <a href="#a64b491cb176342a50ad072288bb88624">More...</a><br/></td></tr>
+<tr class="separator:a64b491cb176342a50ad072288bb88624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Netbios name service. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a6997c1f2f00b5b432db0ac9769c401ea"></a>
+<a class="anchor" id="a504752eeefd6217c175ad25e4a5f43bf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structnetbios__ns__entry__s.html">netbios_ns_entry_s</a>                              <a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a></td>
+          <td class="memname">typedef struct <a class="el" href="structnetbios__ns__entry__s.html">netbios_ns_entry_s</a>                              <a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,14 +173,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a22f26722403327126f8a3e4e5324506f"></a>
+<a class="anchor" id="a64b491cb176342a50ad072288bb88624"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void netbios_ns_clear </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
           <td></td>
         </tr>
@@ -197,14 +197,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab395ca9c9e99267011351f4b50772e06"></a>
+<a class="anchor" id="a72cd8d16f8ba4a74dd11fa8ed2052d63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void netbios_ns_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
           <td></td>
         </tr>
@@ -214,21 +214,21 @@ Functions</h2></td></tr>
 <p>Destroy the netbios name service object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ns</td><td>A pointer on the <a class="el" href="structnetbios__ns__t.html" title="The netbios name service object. ">netbios_ns_t</a> to destroy and deallocate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ns</td><td>A pointer on the <a class="el" href="structnetbios__ns.html" title="The netbios name service object. ">netbios_ns</a> to destroy and deallocate </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aeba1dcc010b77dde6f86e8ac5c95e780"></a>
+<a class="anchor" id="acd2f58a82af09eb10d1d54278393b916"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int netbios_ns_discover </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
           <td></td>
         </tr>
@@ -247,14 +247,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2d853b181ad7fea32771d3474a5516f"></a>
+<a class="anchor" id="a7bf7dc845ff5339b0badf2b867debcf1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a>* netbios_ns_entry_at </td>
+          <td class="memname"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a>* netbios_ns_entry_at </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
         </tr>
         <tr>
@@ -280,18 +280,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a opaque netbios_ns_entry_t structure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a opaque netbios_ns_entry structure </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8c57a5c39f8a34aab815af578c875e0c"></a>
+<a class="anchor" id="a5958f44aa32bd866126ff9a4f6f0fbc6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int netbios_ns_entry_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
           <td></td>
         </tr>
@@ -304,14 +304,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0d6ae6a43ae38611fce4c8d7f63ebd22"></a>
+<a class="anchor" id="a5e2c2346bcc8b0050636a0495abe854a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t netbios_ns_entry_ip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *&#160;</td>
           <td class="paramname"><em>entry</em></td><td>)</td>
           <td></td>
         </tr>
@@ -323,14 +323,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a91c45504747e001178b44a510ef9f2c8"></a>
+<a class="anchor" id="acfdbc5031773b484f04080e0d4ce3b5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const char* netbios_ns_entry_name </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *&#160;</td>
           <td class="paramname"><em>entry</em></td><td>)</td>
           <td></td>
         </tr>
@@ -343,14 +343,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad3feb16ec277db29b77fcc342bfd9b88"></a>
+<a class="anchor" id="a4ee8303fcbfe9bc5dd6df6cbe8a45f56"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">char netbios_ns_entry_type </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a6997c1f2f00b5b432db0ac9769c401ea">netbios_ns_entry_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="netbios__ns_8h.html#a504752eeefd6217c175ad25e4a5f43bf">netbios_ns_entry</a> *&#160;</td>
           <td class="paramname"><em>entry</em></td><td>)</td>
           <td></td>
         </tr>
@@ -362,14 +362,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aac18c2bbe3daf1192f8e3d235544b3b2"></a>
+<a class="anchor" id="ac1aef987b41b337a09607a36205db6fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const char* netbios_ns_inverse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
         </tr>
         <tr>
@@ -399,12 +399,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af7612fa14b9f7b81b27f414163341478"></a>
+<a class="anchor" id="ad26305a9a54336e251a6635cb08b00b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a>* netbios_ns_new </td>
+          <td class="memname"><a class="el" href="structnetbios__ns.html">netbios_ns</a>* netbios_ns_new </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -413,18 +413,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocate and initialize the Netbios name service client object. </p>
-<dl class="section return"><dt>Returns</dt><dd>A newly allocated <a class="el" href="structnetbios__ns__t.html" title="The netbios name service object. ">netbios_ns_t</a> ready for querying. Deallocate with <a class="el" href="netbios__ns_8h.html#ab395ca9c9e99267011351f4b50772e06" title="Destroy the netbios name service object. ">netbios_ns_destroy()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated <a class="el" href="structnetbios__ns.html" title="The netbios name service object. ">netbios_ns</a> ready for querying. Deallocate with <a class="el" href="netbios__ns_8h.html#a72cd8d16f8ba4a74dd11fa8ed2052d63" title="Destroy the netbios name service object. ">netbios_ns_destroy()</a>. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a2e3c2361ba5fd044549bd811b8f3b70c"></a>
+<a class="anchor" id="a280c5f8bd17fb2de1b58102e9b73115d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int netbios_ns_resolve </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnetbios__ns__t.html">netbios_ns_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structnetbios__ns.html">netbios_ns</a> *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
         </tr>
         <tr>
@@ -477,7 +477,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 25 2014 16:12:45 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 15:38:55 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

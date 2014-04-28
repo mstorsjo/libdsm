@@ -102,39 +102,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0bfe41e899e0cce788112d6b8d21f622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a0bfe41e899e0cce788112d6b8d21f622">smb_session_new</a> ()</td></tr>
-<tr class="memdesc:a0bfe41e899e0cce788112d6b8d21f622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new Session object.  <a href="#a0bfe41e899e0cce788112d6b8d21f622">More...</a><br/></td></tr>
-<tr class="separator:a0bfe41e899e0cce788112d6b8d21f622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb468640825f5358104efb80fa84a905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#abb468640825f5358104efb80fa84a905">smb_session_destroy</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
-<tr class="memdesc:abb468640825f5358104efb80fa84a905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a session and deallocate its ressources.  <a href="#abb468640825f5358104efb80fa84a905">More...</a><br/></td></tr>
-<tr class="separator:abb468640825f5358104efb80fa84a905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abded17c7bef9895052c8141fbc2f3655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#abded17c7bef9895052c8141fbc2f3655">smb_session_state</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
-<tr class="memdesc:abded17c7bef9895052c8141fbc2f3655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the session.  <a href="#abded17c7bef9895052c8141fbc2f3655">More...</a><br/></td></tr>
-<tr class="separator:abded17c7bef9895052c8141fbc2f3655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa188972e5a14685572ea7fb9f4e0434"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#afa188972e5a14685572ea7fb9f4e0434">smb_session_connect</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, const char *name, uint32_t ip)</td></tr>
-<tr class="memdesc:afa188972e5a14685572ea7fb9f4e0434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a connection and negotiate a session protocol with a remote host.  <a href="#afa188972e5a14685572ea7fb9f4e0434">More...</a><br/></td></tr>
-<tr class="separator:afa188972e5a14685572ea7fb9f4e0434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d8bf61602125fdae02628f16e1fb5c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a1d8bf61602125fdae02628f16e1fb5c5">smb_session_login</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s, const char *domain, const char *user, const char *password)</td></tr>
-<tr class="memdesc:a1d8bf61602125fdae02628f16e1fb5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate on the remote host with the provided credentials.  <a href="#a1d8bf61602125fdae02628f16e1fb5c5">More...</a><br/></td></tr>
-<tr class="separator:a1d8bf61602125fdae02628f16e1fb5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9076f311152a1bf999123a1cd6a5652"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#ae9076f311152a1bf999123a1cd6a5652">smb_session_is_guest</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
-<tr class="memdesc:ae9076f311152a1bf999123a1cd6a5652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Am i logged in as Guest ?  <a href="#ae9076f311152a1bf999123a1cd6a5652">More...</a><br/></td></tr>
-<tr class="separator:ae9076f311152a1bf999123a1cd6a5652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#acff8dc7a4c4ef06b84baace09b6c05c4">smb_session_server_name</a> (<a class="el" href="structsmb__session__t.html">smb_session_t</a> *s)</td></tr>
-<tr class="memdesc:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the server name with the &lt;XX&gt; type.  <a href="#acff8dc7a4c4ef06b84baace09b6c05c4">More...</a><br/></td></tr>
-<tr class="separator:acff8dc7a4c4ef06b84baace09b6c05c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74691e1c3ff7174bd57d2a94ae6774fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a74691e1c3ff7174bd57d2a94ae6774fd">smb_session_new</a> ()</td></tr>
+<tr class="memdesc:a74691e1c3ff7174bd57d2a94ae6774fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new Session object.  <a href="#a74691e1c3ff7174bd57d2a94ae6774fd">More...</a><br/></td></tr>
+<tr class="separator:a74691e1c3ff7174bd57d2a94ae6774fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af493bad57bc7edf090a080a1f1d45396"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#af493bad57bc7edf090a080a1f1d45396">smb_session_destroy</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s)</td></tr>
+<tr class="memdesc:af493bad57bc7edf090a080a1f1d45396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a session and deallocate its ressources.  <a href="#af493bad57bc7edf090a080a1f1d45396">More...</a><br/></td></tr>
+<tr class="separator:af493bad57bc7edf090a080a1f1d45396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c3d388dec3fe21ff43719f3b32afca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#aa6c3d388dec3fe21ff43719f3b32afca">smb_session_state</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s)</td></tr>
+<tr class="memdesc:aa6c3d388dec3fe21ff43719f3b32afca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the session.  <a href="#aa6c3d388dec3fe21ff43719f3b32afca">More...</a><br/></td></tr>
+<tr class="separator:aa6c3d388dec3fe21ff43719f3b32afca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299afd77683bb0fa4f24884112f214c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a299afd77683bb0fa4f24884112f214c7">smb_session_connect</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s, const char *name, uint32_t ip)</td></tr>
+<tr class="memdesc:a299afd77683bb0fa4f24884112f214c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a connection and negotiate a session protocol with a remote host.  <a href="#a299afd77683bb0fa4f24884112f214c7">More...</a><br/></td></tr>
+<tr class="separator:a299afd77683bb0fa4f24884112f214c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b457bff2d221867bb339076881341f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a3b457bff2d221867bb339076881341f7">smb_session_login</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s, const char *domain, const char *user, const char *password)</td></tr>
+<tr class="memdesc:a3b457bff2d221867bb339076881341f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate on the remote host with the provided credentials.  <a href="#a3b457bff2d221867bb339076881341f7">More...</a><br/></td></tr>
+<tr class="separator:a3b457bff2d221867bb339076881341f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98403d85929fd40b03501ac47c119369"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#a98403d85929fd40b03501ac47c119369">smb_session_is_guest</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s)</td></tr>
+<tr class="memdesc:a98403d85929fd40b03501ac47c119369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Am i logged in as Guest ?  <a href="#a98403d85929fd40b03501ac47c119369">More...</a><br/></td></tr>
+<tr class="separator:a98403d85929fd40b03501ac47c119369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36d763f205d169095aca204ae1178c5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="smb__session_8h.html#af36d763f205d169095aca204ae1178c5">smb_session_server_name</a> (<a class="el" href="structsmb__session.html">smb_session</a> *s)</td></tr>
+<tr class="memdesc:af36d763f205d169095aca204ae1178c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the server name with the &lt;XX&gt; type.  <a href="#af36d763f205d169095aca204ae1178c5">More...</a><br/></td></tr>
+<tr class="separator:af36d763f205d169095aca204ae1178c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to connect and authenticate to an SMB server. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afa188972e5a14685572ea7fb9f4e0434"></a>
+<a class="anchor" id="a299afd77683bb0fa4f24884112f214c7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int smb_session_connect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -171,14 +171,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb468640825f5358104efb80fa84a905"></a>
+<a class="anchor" id="af493bad57bc7edf090a080a1f1d45396"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void smb_session_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -196,14 +196,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae9076f311152a1bf999123a1cd6a5652"></a>
+<a class="anchor" id="a98403d85929fd40b03501ac47c119369"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int smb_session_is_guest </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -221,14 +221,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d8bf61602125fdae02628f16e1fb5c5"></a>
+<a class="anchor" id="a3b457bff2d221867bb339076881341f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int smb_session_login </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
@@ -273,12 +273,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0bfe41e899e0cce788112d6b8d21f622"></a>
+<a class="anchor" id="a74691e1c3ff7174bd57d2a94ae6774fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmb__session__t.html">smb_session_t</a>* smb_session_new </td>
+          <td class="memname"><a class="el" href="structsmb__session.html">smb_session</a>* smb_session_new </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -292,14 +292,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acff8dc7a4c4ef06b84baace09b6c05c4"></a>
+<a class="anchor" id="af36d763f205d169095aca204ae1178c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const char* smb_session_server_name </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -317,14 +317,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abded17c7bef9895052c8141fbc2f3655"></a>
+<a class="anchor" id="aa6c3d388dec3fe21ff43719f3b32afca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int smb_session_state </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmb__session__t.html">smb_session_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmb__session.html">smb_session</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 25 2014 16:12:45 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 15:38:55 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
