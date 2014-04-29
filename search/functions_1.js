@@ -6,7 +6,7 @@ var searchData=
   ['smb_5ffread',['smb_fread',['../smb__file_8h.html#a2206bf27ce2f8a07b7670bb9483e9bde',1,'smb_file.c']]],
   ['smb_5ffseek',['smb_fseek',['../smb__file_8h.html#a6edf280c096c053eb36c450497b6604d',1,'smb_file.c']]],
   ['smb_5ffstat',['smb_fstat',['../smb__stat_8h.html#a2d0c73b292f796a4268bc3ebc191ccff',1,'smb_trans2.c']]],
-  ['smb_5fsession_5fconnect',['smb_session_connect',['../smb__session_8h.html#a299afd77683bb0fa4f24884112f214c7',1,'smb_session.c']]],
+  ['smb_5fsession_5fconnect',['smb_session_connect',['../smb__session_8h.html#ab9c462a995d742907146871465ba2ca0',1,'smb_session.c']]],
   ['smb_5fsession_5fdestroy',['smb_session_destroy',['../smb__session_8h.html#af493bad57bc7edf090a080a1f1d45396',1,'smb_session.c']]],
   ['smb_5fsession_5fis_5fguest',['smb_session_is_guest',['../smb__session_8h.html#a98403d85929fd40b03501ac47c119369',1,'smb_session.c']]],
   ['smb_5fsession_5flogin',['smb_session_login',['../smb__session_8h.html#a3b457bff2d221867bb339076881341f7',1,'smb_session.c']]],

@@ -71,6 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -86,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -227,13 +228,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="smb__defs_8h.html#a8c1b00e826c55d685030bb39b334c4b3">smb_defs.h</a>
 </li>
 <li>SMB_SEEK_CUR
-: <a class="el" href="smb__defs_8h.html#a744a4e6a39d831cb5839a2269a6806fc">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5acb01878e8ad98a9f7b64296d260161ea">smb_defs.h</a>
 </li>
 <li>SMB_SEEK_SET
-: <a class="el" href="smb__defs_8h.html#a2ceac42b87e79f33807740a6e14704b2">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5aed87e59738654a7ad5ce04d3918c180e">smb_defs.h</a>
 </li>
 <li>smb_session_connect()
-: <a class="el" href="smb__session_8h.html#a299afd77683bb0fa4f24884112f214c7">smb_session.h</a>
+: <a class="el" href="smb__session_8h.html#ab9c462a995d742907146871465ba2ca0">smb_session.h</a>
 </li>
 <li>smb_session_destroy()
 : <a class="el" href="smb__session_8h.html#af493bad57bc7edf090a080a1f1d45396">smb_session.h</a>
@@ -302,19 +303,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="smb__stat_8h.html#a2fd84dda15c043babf3d6133a0d52578">smb_stat.h</a>
 </li>
 <li>SMB_STATE_DIALECT_OK
-: <a class="el" href="smb__defs_8h.html#a91cf8a6d294c4d59258d17d47caf072d">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a4c44d80c833eaf852bd2ffedfd65de2c">smb_defs.h</a>
 </li>
 <li>SMB_STATE_ERROR
-: <a class="el" href="smb__defs_8h.html#abb3cf125f0402bc1f2bf54b3995c1050">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a7c13a0de932cfbbacc370b897b206dd1">smb_defs.h</a>
 </li>
 <li>SMB_STATE_NETBIOS_OK
-: <a class="el" href="smb__defs_8h.html#a3409e94036ea5d0f915dbe8a57487d97">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ae898be36d640e2d796afa6d0c9e8a185">smb_defs.h</a>
 </li>
 <li>SMB_STATE_NEW
-: <a class="el" href="smb__defs_8h.html#a26f543a878430315e314c357b9d58852">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a1d1435dfa3a009d77345caa6be36fd56">smb_defs.h</a>
 </li>
 <li>SMB_STATE_SESSION_OK
-: <a class="el" href="smb__defs_8h.html#a036e4d6271ae21c2d7e1d33b33f50c66">smb_defs.h</a>
+: <a class="el" href="smb__defs_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a9b9bd3bd05f8a29842202bfaf5012599">smb_defs.h</a>
+</li>
+<li>SMB_TRANSPORT_NBT
+: <a class="el" href="smb__defs_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab34932d2cc68e428dcf85b75bd02ba68">smb_defs.h</a>
+</li>
+<li>SMB_TRANSPORT_TCP
+: <a class="el" href="smb__defs_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba69df3f99316f3a062a4f8c7d02795122">smb_defs.h</a>
 </li>
 <li>smb_tree_connect()
 : <a class="el" href="smb__share_8h.html#af88c3e013bca6b5bc1709be1e668b01e">smb_share.h</a>
@@ -326,7 +333,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 28 2014 15:38:55 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 29 2014 11:30:12 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

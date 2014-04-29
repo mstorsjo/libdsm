@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -294,15 +294,15 @@ Functions</h2></td></tr>
 <p>The behavior of this function is the same as the Unix fseek() function, except the SEEK_END argument isn't supported.</p>
 <p>This functions adjust the read the read pointer depending on the value of offset and whence.</p>
 <ul>
-<li>If whence == <a class="el" href="smb__defs_8h.html#a2ceac42b87e79f33807740a6e14704b2" title="Set the read pointer at the given position. ">SMB_SEEK_SET</a>, the read pointer is set at 'offset'</li>
-<li>If whence == <a class="el" href="smb__defs_8h.html#a744a4e6a39d831cb5839a2269a6806fc" title="Adjusts the read pointer relatively to the actual position. ">SMB_SEEK_CUR</a>, the read pointer is adjusted by 'offset'</li>
+<li>If whence == <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5aed87e59738654a7ad5ce04d3918c180e" title="Set the read pointer at the given position. ">SMB_SEEK_SET</a>, the read pointer is set at 'offset'</li>
+<li>If whence == <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5acb01878e8ad98a9f7b64296d260161ea" title="Adjusts the read pointer relatively to the actual position. ">SMB_SEEK_CUR</a>, the read pointer is adjusted by 'offset'</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The session object </td></tr>
     <tr><td class="paramname">fd</td><td>The file descriptors for which the read pointer is to be adjusted </td></tr>
     <tr><td class="paramname">offset</td><td>Set/Adjust quantity </td></tr>
-    <tr><td class="paramname">whence</td><td>Which action to perform. Supported operations are <a class="el" href="smb__defs_8h.html#a2ceac42b87e79f33807740a6e14704b2" title="Set the read pointer at the given position. ">SMB_SEEK_SET</a> and <a class="el" href="smb__defs_8h.html#a744a4e6a39d831cb5839a2269a6806fc" title="Adjusts the read pointer relatively to the actual position. ">SMB_SEEK_CUR</a> </td></tr>
+    <tr><td class="paramname">whence</td><td>Which action to perform. Supported operations are <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5aed87e59738654a7ad5ce04d3918c180e" title="Set the read pointer at the given position. ">SMB_SEEK_SET</a> and <a class="el" href="smb__defs_8h.html#a99fb83031ce9923c84392b4e92f956b5acb01878e8ad98a9f7b64296d260161ea" title="Adjusts the read pointer relatively to the actual position. ">SMB_SEEK_CUR</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 28 2014 15:38:55 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 29 2014 11:30:12 for libdsm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
